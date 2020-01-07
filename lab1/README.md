@@ -39,7 +39,7 @@ Let's open a new editor tab as the scratchboard in Cloud9 and copy/paste all the
 
 
 
-Go to the [Amazon ECS console](https://ap-northeast-1.console.aws.amazon.com/ecs/home?region=ap-northeast-1#/clusters) for cluster list, select the cluster name **recapTaipei2020WorkshopStack-xxxxxxxxx**
+Go to the [Amazon ECS console](https://ap-northeast-1.console.aws.amazon.com/ecs/home?region=ap-northeast-1#/clusters) for cluster list, select the cluster name **Lab1Stack-Cluster-xxxxxxxxx**
 
 
 
@@ -131,9 +131,9 @@ Now we need update the existing Amazon ECS service with the ASG capacity provide
 ```bash
 # copy/paste your CLUSTER_NAME, SERVICE_NAME, and ASG_NAME from cdk output
 # and make sure you single quote the value
-$ CLUSTER_NAME='recapTaipei2020WorkshopStack-ClusterEB0386A7-E3VD3OLNQI5Y'
-$ SERVICE_NAME='recapTaipei2020WorkshopStack-SvcServiceF685A632-13HGR69D0RLLS'
-$ ASG_NAME='recapTaipei2020WorkshopStack-ClustercapacityASG73C65867-5K4MASAS6736'
+$ CLUSTER_NAME='Lab1Stack-ClusterEB0386A7-1JNQKSFY6MMJ4'
+$ SERVICE_NAME='Lab1Stack-SvcServiceF685A632-11HL8NO67PXTQ'
+$ ASG_NAME='Lab1Stack-ClustercapacityASG73C65867-15OMUJIWUDA7L'
 
 # update the service with new capacity provider and strategy
 $ aws --region ap-northeast-1 ecs update-service --cluster ${CLUSTER_NAME} \
