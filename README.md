@@ -1,4 +1,4 @@
-# reInvent recap container and serverless workshop
+# AWS reInvent 2019 reCap container and serverless workshop
 
 Welcome to AWS reInvent recap container and serverless workshop. This workshop walks you through some important new features regarding AWS serverless and containers announced in AWS reInvent 2019.
 
