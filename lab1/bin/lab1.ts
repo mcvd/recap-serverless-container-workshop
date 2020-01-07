@@ -11,4 +11,4 @@ const env = {
 };
 
 
-new Lab1Stack(app, 'recapTaipei2020WorkshopStack', { env });
+new Lab1Stack(app, 'Lab1Stack', { env });
