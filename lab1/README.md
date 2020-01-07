@@ -2,6 +2,7 @@
 
 In this Lab, we are going to create an Amazon ECS cluster with EC2 and enable the CAS feature for cluster auto scaling.
 
+![](images/lab1-ecs-cas.png)
 
 
 ## Clone the repo
