@@ -1,10 +1,9 @@
 # reInvent recap container and serverless workshop
 
-Welcome to AWS reInvent recap container and serverless workshop. This workshop will walk you through some important new features regarding AWS serverless and containers announced in AWS reInvent 2019.
+Welcome to AWS reInvent recap container and serverless workshop. This workshop walks you through some important new features regarding AWS serverless and containers announced in AWS reInvent 2019.
 
 
-
-## Labs and Topics
+## Labs
 
 - [x] [Lab0](lab0/README.md) - **Environment Setup with AWS Cloud9 and AWS CDK**
 - [x] [Lab1](lab1/README.md) - **Amazon ECS CAS(Cluater Auto Scaling) with EC2**
