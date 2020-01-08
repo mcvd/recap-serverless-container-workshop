@@ -1,8 +1,16 @@
-# Amazon ECS CAS(Cluster Auto Scaling)
+# Amazon ECS CAS(Cluster Auto Scaling) with Amazon EC2
 
 In this Lab, we are going to create an Amazon ECS cluster with EC2 and enable the CAS feature for cluster auto scaling.
 
 ![](images/lab1-ecs-cas.png)
+
+
+## What are we going to do
+1. Create a Application LoadBalanced Amazon ECS service wth EC2 in AWS CDK
+2. Increase the desired task number from 1 to 5. Observe what's going to happen when new tasks fail to be placed.
+3. Create an ASG Capacity Provider with the existing ASG
+4. Update the existing ECS service with the ASG Capacity Provider and force re-deployment
+5. Observe the Cluster Auto Scaling
 
 
 ## Clone the repo
