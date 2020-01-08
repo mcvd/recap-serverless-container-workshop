@@ -16,7 +16,7 @@ In this Lab, we are going to create an Amazon ECS cluster with EC2 and enable th
 ## Clone the repo
 
 ```bash
-$ git clone https://github.com/pahud/recap20-serverless-container-workshop.git
+$ git clone https://github.com/pahud/recap-serverless-container-workshop.git
 ```
 
 
