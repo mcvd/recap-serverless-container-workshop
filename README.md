@@ -10,5 +10,5 @@ Welcome to AWS reInvent recap container and serverless workshop. This workshop w
 - [x] [Lab2](lab2/README.md) - **Amazon ECS CAS(Cluater Auto Scaling) with FARGATE and FARGATE_SPOT**
 - [x] [Lab3](lab3/README.md) - **Amazon EKS with AWS FARGATE**
 - [x] [Lab4](lab4/README.md) - **Amazon API Gateway HTTP API**
-- [ ] [Lab5](lab5/README.md) - **AWS Lambda Provisioned Concurrency(WIP)**
+- [ ] Lab5 - **AWS Lambda Provisioned Concurrency(WIP)**
 
