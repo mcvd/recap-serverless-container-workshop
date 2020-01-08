@@ -12,6 +12,29 @@ $ sudo mv /tmp/eksctl /usr/local/bin
 $ eksctl version
 ```
 
+## create the amin role and instance profile for cloud9
+
+```bash
+$ aws iam create-role --role-name recapWorkshopCloud9Role --assume-role-policy-document file://assume-role-policy.json
+$ aws iam attach-role-policy --role-name recapWorkshopCloud9Role --policy-arn arn:aws:iam::aws:policy/AdministratorAccess
+$ aws iam create-instance-profile --instance-profile-name recapWorkshopCloud9Role
+$ aws iam add-role-to-instance-profile --role-name recapWorkshopCloud9Role --instance-profile-name recapWorkshopCloud9Role
+```
+
+## attach the new instance profile to Cloud9
+
+![](images/01.png)
+
+![](images/02.png)
+
+![](images/03.png)
+
+![](images/04.png)
+
+![](images/05.png)
+
+
+
 ## Create EKS cluster with Fargate support
 
 
