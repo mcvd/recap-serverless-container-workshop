@@ -9,7 +9,7 @@ In this Lab, we are going to create an Amazon ECS cluster with **Capacity Provid
 ## Clone the repo
 
 ```bash
-$ git clone https://github.com/pahud/recap20-serverless-container-workshop.git
+$ git clone https://github.com/pahud/recap-serverless-container-workshop.git
 ```
 
 
@@ -18,7 +18,7 @@ $ git clone https://github.com/pahud/recap20-serverless-container-workshop.git
 
 ```bash
 # deploy into default VPC
-$ cd recap20-serverless-container-workshop/lab2
+$ cd recap-serverless-container-workshop/lab2
 # install required npm modules
 $ npm i
 # bootstrap your environment for CDK(you only need do it once)
