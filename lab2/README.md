@@ -84,9 +84,9 @@ $ cdk deploy -c USE_DEFAULT_VPC=1 -c region=ap-northeast-1 -c DESIRED_COUNT=5
 
 ```bash
 # get all tasks
-$ tasks=($(aws ecs list-tasks --cluster Lab2Stack-ClusterEB0386A7-N7ZYJ0FVS4WB --query taskArns --output text))
+$ tasks=($(aws ecs list-tasks --cluster ${CLUSTER_NAME} --query taskArns --output text))
 # describe all tasks
-$ aws ecs describe-tasks --cluster Lab2Stack-ClusterEB0386A7-N7ZYJ0FVS4WB --tasks ${tasks} --query 'tasks[].[taskArn,capacityProviderName]'
+$ aws ecs describe-tasks --cluster ${CLUSTER_NAME} --tasks ${tasks} --query 'tasks[].[taskArn,capacityProviderName]'
 [
     [
         "arn:aws:ecs:ap-northeast-1:903779448426:task/Lab2Stack-ClusterEB0386A7-N7ZYJ0FVS4WB/17c3539769de4a789912dbe445b31dba",
