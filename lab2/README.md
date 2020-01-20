@@ -52,7 +52,10 @@ aws ecs put-cluster-capacity-providers --cluster ${CLUSTER_NAME}  \
 aws ecs update-service --cluster ${CLUSTER_NAME} --service ${SERVICE_NAME} \
 --capacity-provider-strategy capacityProvider=FARGATE_SPOT,weight=${FARGATE_SPOT_WEIGHT},base=${FARGATE_SPOT_BASE} \
 capacityProvider=FARGATE,weight=${FARGATE_WEIGHT},base=${FARGATE_BASE} --force-new-deployment
+```
 
+
+```bash
 # describe the service to see its capacityProviderStrategy
 aws ecs describe-services --cluster ${CLUSTER_NAME} --service ${SERVICE_NAME} --query 'services[0].capacityProviderStrategy'                  
 [
