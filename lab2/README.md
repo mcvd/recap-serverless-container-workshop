@@ -52,7 +52,10 @@ aws ecs put-cluster-capacity-providers --cluster ${CLUSTER_NAME}  \
 aws ecs update-service --cluster ${CLUSTER_NAME} --service ${SERVICE_NAME} \
 --capacity-provider-strategy capacityProvider=FARGATE_SPOT,weight=${FARGATE_SPOT_WEIGHT},base=${FARGATE_SPOT_BASE} \
 capacityProvider=FARGATE,weight=${FARGATE_WEIGHT},base=${FARGATE_BASE} --force-new-deployment
+```
 
+
+```bash
 # describe the service to see its capacityProviderStrategy
 aws ecs describe-services --cluster ${CLUSTER_NAME} --service ${SERVICE_NAME} --query 'services[0].capacityProviderStrategy'                  
 [
@@ -81,9 +84,9 @@ $ cdk deploy -c USE_DEFAULT_VPC=1 -c region=ap-northeast-1 -c DESIRED_COUNT=5
 
 ```bash
 # get all tasks
-$ tasks=($(aws ecs list-tasks --cluster Lab2Stack-ClusterEB0386A7-N7ZYJ0FVS4WB --query taskArns --output text))
+$ tasks=($(aws ecs list-tasks --cluster ${CLUSTER_NAME} --query taskArns --output text))
 # describe all tasks
-$ aws ecs describe-tasks --cluster Lab2Stack-ClusterEB0386A7-N7ZYJ0FVS4WB --tasks ${tasks} --query 'tasks[].[taskArn,capacityProviderName]'
+$ aws ecs describe-tasks --cluster ${CLUSTER_NAME} --tasks ${tasks} --query 'tasks[].[taskArn,capacityProviderName]'
 [
     [
         "arn:aws:ecs:ap-northeast-1:903779448426:task/Lab2Stack-ClusterEB0386A7-N7ZYJ0FVS4WB/17c3539769de4a789912dbe445b31dba",
