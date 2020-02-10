@@ -17,8 +17,8 @@ export class Lab1Stack extends cdk.Stack {
     const asg = cluster.addCapacity('capacity', {
       // t3.small with 2 vCore and 2 GB memory for each instance
       instanceType: new ec2.InstanceType('t3.small'),
-      desiredCapacity: 1,
-      minCapacity: 0,
+      // desiredCapacity: 1,
+      minCapacity: 1,
       maxCapacity: 10,
     })
 
